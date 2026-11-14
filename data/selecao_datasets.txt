@@ -1,0 +1,13 @@
+# Seleção de datasets do grupo (TabArena-v0.1, classificação).
+#
+# Liste um task ID do OpenML por linha, escolhidos em data/tabarena_v01_classificacao.csv.
+# Regra do enunciado: 4 datasets por regime de tamanho (12 no total). Recomendação: pelo
+# menos um problema binário e um multiclasse por regime quando o catálogo oferecer.
+#   pequeno: n < 2.500 | médio: 2.500 <= n < 10.000 | grande: n >= 10.000
+# O catálogo oferece 12 datasets pequenos, 10 médios e 16 grandes; escolha 4 de cada regime.
+#
+# Para conferir a seleção:
+#   python -m src.pipeline.check_selection
+#
+# Texto após '#' é ignorado. Exemplo de linha:
+# 363621  # blood-transfusion-service-center (pequeno, binário)
